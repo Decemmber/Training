@@ -32,7 +32,7 @@ ul, li {
 }
 
 /*Header*/
-.header > div {
+.header {
     color: #fff;
     text-align: center;
     padding: 180px 0;
@@ -55,23 +55,16 @@ ul, li {
     margin: 0 10px;
     color: #fff;
     transition: 0.3s;
-}
-
-.button_empty {
-    background: transparent;
-    border: 2px solid #fff;
-}
-
-.button_full {
     background: #00897b;
     border: 2px solid #00897b;
 }
 
-.button_empty:hover,
-.button_full:hover {
-    border: 2px dotted white;
-    background: #07554d;
+.button:hover {
+    background: transparent;
+    border: 2px solid #fff;
 }
+
+
 
 /*About Us*/
 .about {
@@ -91,6 +84,7 @@ ul, li {
     color: #212121;
     font-size: 15px;
     margin-bottom: 110px;
+    transition: 0.3s;
 }
 
 .about__item {
@@ -100,5 +94,111 @@ ul, li {
     font-size: 20px;
 }
 
+/*services*/
+.services {
+    padding-top: 165px;
+    padding-bottom: 125px;
+    background-color: #e4fdf9;
+    color: #000;
+    text-align: center;
+}
 
-  
+.services__title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.services__text {
+    color: #212121;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.our-card {
+    background: #fff;
+    padding: 58px 30px 50px;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+
+.our-card:hover {
+    background: #00897b;
+    color: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.35); 
+}
+
+.our-card:hover .icon {
+    color: #fff;   
+}
+
+.our-card:hover .services__text {
+    color: #fff;   
+}
+
+.our-card:hover .button-services {
+    color: #fff;
+    border: 1px solid #fff;  
+}
+
+.icon {
+    font-size: 60px;
+    color: #000;
+    transition: 0.3s; 
+}
+
+.button-services {
+    font-family: 'Open Sans Semibold';
+    text-transform: uppercase;
+    border: 1px solid black;
+    background: transparent;
+    padding: 14px 12px 14px;
+    transition: 0.3s;
+    margin-top: 40px;
+}
+
+.button-services:hover {
+    cursor: pointer;
+    background: #2ecdbd; 
+}
+
+/*portfolio*/
+.portfolio {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 125px;
+}
+
+.portfolio button:hover,
+.focused {
+    color: #000;
+    border: 2px solid #00897b;
+    background: transparent;
+}
+
+.portfolio img {
+    margin-bottom: 30px;
+}
+
+.filter {
+    padding: 120px 0;
+}
+
+div[filter]:hover img {
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+
+.portfolio__description {
+    display: none;
+}
+
+div[filter]:hover .portfolio__description {
+    display: block;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: 3;
+    text-align: center;
+}

@@ -268,9 +268,11 @@ div[filter]:hover .portfolio__description {
     cursor: pointer;
     color: #000;
     border: 2px solid #000;
-    padding: 15px 30px; 
+    width: 180px;
+    height: 60px;
     background: transparent;
     font-size: 20px;
+    text-transform: uppercase;
     transition: 0.3s;
 }
 
@@ -281,3 +283,151 @@ div[filter]:hover .portfolio__description {
     border: none;
 }
 
+.team {
+    padding-top: 165px;
+    padding-bottom: 125px;
+    color: #000;
+    background: #fff;
+    text-align: center;
+}
+
+.team h4 {
+    font-size: 20px;
+    font-family: 'Open Sans Semibold';
+    padding-top: 30px;
+}
+
+.team p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons a i {
+    transition: 0.3s;
+}
+
+.icons i:nth-child(1) {
+    color: #f0f1f1;
+}
+
+.icons i:nth-child(2) {
+    color: #00897b;
+}
+
+.icons a:hover i:nth-child(1) {
+    color: #3949ab;
+}
+
+.icons a:hover i:nth-child(2) {
+    color: #fff;
+}
+
+.team img {
+    margin: 0 auto;
+    max-width: 340px;
+}
+
+.multiple-items {
+    margin-top: 125px;
+}
+
+.dots-style {
+    margin-top: 115px;
+    display: flex;
+    justify-content: center;
+}
+
+.dots-style button {
+    background: #00897b;
+    border: none;
+    border-radius: 50%;
+    font-size: 0;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+}
+
+.dots-style li[class="slick-active"] button {
+    background: #3949ab;
+}
+
+/*Blog*/
+.blog {
+    padding-top: 165px;
+    padding-bottom: 125px;
+    background-color: #e4fdf9;
+    color: #000;
+    text-align: center;
+}
+
+.left > div:first-child {
+    order: 1;
+}
+
+.left > div:last-child {
+    order: 2;
+}
+
+.right > div:first-child {
+    order: 2;
+}
+
+.right > div:last-child {
+    order: 1;
+}
+
+.blog__item_text {
+    text-align: left;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.blog__item_text a {
+    font-size: 25px;
+    color: #00897b;
+    font-family: 'Open Sans Semibold';
+}
+
+.blog__item_text div {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.blog__item_text span {
+    font-size: 17px;
+    font-family: 'Open Sans Semibold';
+    margin-right: 35px;
+}
+
+
+.blog__item_text i {
+    margin-right: 15px;
+}
+
+.blog__item_text p {
+    font-size: 15px;
+}
+
+.blog__item_icons {
+    margin: 10px 0px;
+}
+
+.left, .right {
+    margin: 0 -40px;
+}
+
+.button_blog {
+    width: 220px;
+    height: 70px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    background: #00897b;
+    margin-top: 125px;
+    border: none;
+}
